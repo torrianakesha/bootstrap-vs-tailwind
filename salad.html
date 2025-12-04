@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fresh Garden Salad</title>
+  <link rel="stylesheet" href="styles.css"> <!--External CSS File -->
+</head>
+<body>
+  <header>
+    <h1 class="recipe-title">Fresh Garden Salad</h1>
+  </header>
+
+<main class="recipe-container">
+    <p><a class="back-home" href="index.html">Back to Home</a></p>
+
+    <section class="media-section">
+      <img class="recipe-img" src="images/fresh_salad.png" alt="Fresh Garden Salad (placeholder)">
+    </section>
+
+    <!-- Short Description -->
+    <section>
+      <p>This fresh garden salad is a healthy and refreshing dish. It’s customizable and packed with vitamins.</p>
+    </section>
+
+    <!-- Ingredients -->
+    <section>
+      <h2>Ingredients</h2>
+      <ul class="ingredients-list">
+        <li>Lettuce</li>
+        <li>Cucumber</li>
+        <li>Tomatoes</li>
+        <li><span class="measure">1 cup</span> shredded carrots</li>
+      </ul>
+    </section>
+
+    <!-- Instructions -->
+    <section>
+      <h2>Instructions</h2>
+      <ol class="instructions-list">
+        <li>Wash vegetables.</li>
+        <li>Combine in bowl.</li>
+        <li>Prepare dressing.</li>
+        <li>Toss and serve.</li>
+      </ol>
+    </section>
+
+    <!-- Subscription Form -->
+    <section>
+      <h2>Subscribe for More Recipes</h2>
+      <form id="subscribe-form">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required pattern="[A-Za-z\s]+" title="Name should contain letters only.">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="text" placeholder="+63" required pattern="[0-9]{11}" minlength="11" maxlength="11" title="Phone number must be exactly 11 digits.">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Prefer not to say</option>
+        </select>
+        <button class="btn-form" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- CDN for jQuery -->
+  <script src="script.js"></script> <!-- External JS File -->
+</body>
+</html>
